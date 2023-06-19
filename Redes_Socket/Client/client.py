@@ -17,31 +17,6 @@ small_button.pack(ipadx=10, ipady=10, pady=10, fill=tk.X)
 medium_button.pack(ipadx=10, ipady=10, pady=10, fill=tk.X)
 large_button.pack(ipadx=10, ipady=10, pady=10, fill=tk.X)
 end_button.pack(ipadx=10, ipady=10, pady=10, fill=tk.X)
-
-
-# file = input("What file do you wanna copy? ")
-# bytes_per = 1024
-
-# if file == 'medium':
-#   bytes_per = 10240  
-# elif file == 'large':
-#   bytes_per = 102400
-
-
-# with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as stream:
-#   stream.connect((HOST, PORT))
-#   stream.sendall(bytes(file, "utf-8"))
-#   while True:
-#     data = stream.recv(bytes_per)
-#     if not data:
-#       break 
-#     line = data.decode("utf-8") 
-#     with open('large.txt', 'a') as file:
-#       file.write(line)
      
 root.mainloop()     
       
-
-#   result = int.from_bytes(data, byteorder='big')
-
-# print(f"Received {result!r}")  
