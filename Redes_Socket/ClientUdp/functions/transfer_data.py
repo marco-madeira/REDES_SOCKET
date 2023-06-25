@@ -60,4 +60,3 @@ def show_result(time_elapsed: float, file_name: str, line_count: int):
 def execute_transfer(file_name: str):
     transfer_thread = threading.Thread(target=transfer_data, args=(file_name,))
     transfer_thread.start()
-

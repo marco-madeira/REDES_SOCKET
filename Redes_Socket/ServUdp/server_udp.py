@@ -12,9 +12,6 @@ with socket.socket(socket.AF_INET, socket.SOCK_DGRAM) as udp_socket:
         data, address = udp_socket.recvfrom(BUFFER_SIZE)
         file_name = data.decode("utf-8")
 
-        if file_name.lower() == "end":
-            break
-
         with open(f"database/{file_name}.txt") as file:
             for line in file:
                 udp_socket.sendto(line.encode('utf-8'), address)
